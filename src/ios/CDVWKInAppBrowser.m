@@ -539,7 +539,7 @@ static CDVWKInAppBrowser* instance = nil;
     }
     
     //if is an app store or enterprise app link, let the system handle it, otherwise it fails to load it
-    if ([[ url scheme] isEqualToString:@"itms-appss"] || [[ url scheme] isEqualToString:@"itms-apps"] || [[ url scheme] isEqualToString:@"itms-services"] ) {) {
+    if ([[ url scheme] isEqualToString:@"itms-appss"] || [[ url scheme] isEqualToString:@"itms-apps"] || [[ url scheme] isEqualToString:@"itms-services"] ) {
         [theWebView stopLoading];
         [self openInSystem:url];
         shouldStart = NO;
